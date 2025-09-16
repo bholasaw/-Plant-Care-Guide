@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Care Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5fff5;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    header {
+      background: #065a09;
+      height: 150px;
+      width: 100%;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    header img {
+      border-radius: 50%;
+      height: 140px;
+      width: 140px;
+      object-fit: cover;
+      position: absolute;
+      left: 20px; 
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .title {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .title p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+   nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px;
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 12px;
+  background: #065a09;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #0a8010; /* lighter green on hover */
+  transform: scale(1.05);
+}
+.styled-line {
+  border: none;
+  height: 3px;
+  background: #2f312f; /* your soil-water color */
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.container{
+  background-color: #2f312f;
+ 
+}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      width: 250px;
+      height: 500px;
+      border: 4px solid black;
+      background-color: white;
+    } footer {
+      background-color: #212121;
+      color: #fff;
+      padding: 40px 60px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-column h4 {
+      color: #b0b0b0;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .footer-column a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 5px 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-divider {
+      width: 1px;
+      background-color: #666;
+      margin: 0 20px;
+    }
+
+    .footer-contact {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-contact a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+
+    .footer-social {
+      margin-top: 10px;
+    }
+
+    .footer-social i {
+      margin-right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      text-align: center;
+      color: #aaa;
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+      }
+      .footer-divider {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="e:/vikash/ChatGPT Image Sep 12, 2025, 12_42_27 PM.png" alt="Logo">
+    <div class="title">
+      <h1>🌿 Plant Care Guide</h1>
+      <p>Tips for keeping your plants healthy and happy</p>
+    </div>
+  </header>
+    <nav>
+    <a href="e:\vikash\watering.html" onclick="showContent('watering')">Watering</a>
+    <a href="e:\vikash\sunlight.html" onclick="showContent('sunlight')">Sunlight</a>
+    <a href="e:\vikash\soil.html" onclick="showContent('soil')">Soil</a>
+    <a href="e:\vikash\fertilizer.html"onclick="showContent('Fertilizer')">Fertilizer</a>
+    <a href="e:\vikash\video.html" onclick="showContent('Fertilizer')">Video</a>
+    <a href="plant_name.html">plants name</a>
+  </nav>
+  <hr class="styled-line">
+ <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <a href="#">GROUP name</a>
+        <ul>Bhola Saw</ul>
+        <ul>Karan</ul>
+        <ul>shubham</ul>
+        <ul>vikas</ul>
+       <ul>vivek</ul>
+       <ul></p>
+      </div>
+
+      <div class="footer-column">
+        <ul>
+          <h3>Why need plantation</h3>
+           <li> Large-scale crop farming.</li>
+
+          <li>Commercial purpose.</li>
+
+            <li>Grown in tropical areas.</li>
+
+           <li>Includes tea, coffee, rubber.</li>
+            <li>Creates jobs.</li>
+
+           <li>Needs eco-friendly methods.</li>
+</ul>
+      </div>
+
+      <div class="footer-column">
+        <h4></h4>
+        
+        
+      </div>
+
+      <div class="footer-column">
+        <h4>About Website</h4>
+        <a href="watering.html">Watering</a>
+        <a href="sunlight.html">Sunlight</a>
+        <a href="soil.html">soil</a>
+        <a href="video.html">video</a>
+        <a href="fertilizer.html">Fertlizer</a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-column">
+        <h4>Home plantations impormation</h4>
+        <p class="footer-contact">
+          Grow plants at home.
+          <br>
+
+            Get fresh vegetables.
+<br>
+            Clean the air.
+<br>
+            Save money.
+<br>
+            Help the environment.
+<br>
+            Relax and enjoy.
+            <br>
+        </p>
+        <h4>Social Accounts:</h4>
+        <div class="footer-social">
+         <a href="https://www.instagram.com/anurajgupta8347?igsh=ZzFuY3p6cTVrNGR6">instagram</a>
+         <a href="https://testbook.com/articles/what-is-plantation-agriculture">Google</a>       
+        <a href="https://youtube.com/@krishnavidyamandir8347?si=ALHZsI-uqa6TTm8S">youtube</a>
+        
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4></h4>
+        <p class="footer-contact">
+         you can about Plant Care Guide
+          <br>
+          at this address 
+          <br>
+          Krishna Plant Nursery at Adarsh Nagar <br> Udyan, Worli <br> Mumbai - 400018 or Botanical Fantasies Garden Centre
+          Telephone: <a href="tel:08460243696"></a> /
+          <a href="tel:044-67415800">08460243696</a>
+        <a href="bk2821120@gmail.com">bk2821120@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Plant Care Guide.
+    </div>
+  </footer>
+
+</body>
+<script>
+    function showContent(id) {
+   
+      document.querySelectorAll('.content').forEach(c => c.style.display = 'none');
+     
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</html>
